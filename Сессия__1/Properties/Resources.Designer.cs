@@ -63,9 +63,9 @@ namespace Сессия__1.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Лого {
+        internal static System.Drawing.Bitmap Авторизация {
             get {
-                object obj = ResourceManager.GetObject("Лого", resourceCulture);
+                object obj = ResourceManager.GetObject("Авторизация", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace Сессия__1.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap На_авторизацию_Обновление_кода {
+        internal static System.Drawing.Bitmap Лого {
             get {
-                object obj = ResourceManager.GetObject("На_авторизацию_Обновление_кода", resourceCulture);
+                object obj = ResourceManager.GetObject("Лого", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

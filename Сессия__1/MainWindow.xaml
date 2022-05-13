@@ -5,28 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Сессия__1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="450" Width="700">
+    <Grid Opacity="0.985">
         <Grid.RowDefinitions>
-            <RowDefinition Height="96*"/>
-            <RowDefinition Height="236*"/>
-            <RowDefinition Height="87*"/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
-        <Label Content="Телеком Нева Связь" HorizontalAlignment="Left" Height="48" Margin="22,10,0,0" VerticalAlignment="Top" Width="286" FontSize="22"/>
-        <Button Content="отмена" HorizontalAlignment="Left" Height="40" Margin="188,20,0,0" Grid.Row="2" VerticalAlignment="Top" Width="120" Click="Button_Cancel"/>
-        <Button Content="Вход" HorizontalAlignment="Left" Height="40" Margin="450,20,0,0" Grid.Row="2" VerticalAlignment="Top" Width="120" Click="Button_Vxod"/>
-        <Label Content="Номер" HorizontalAlignment="Left" Height="35" Margin="225,40,0,0" Grid.Row="1" VerticalAlignment="Top" Width="116" FontSize="16"/>
-        <Label Content="Пароль" HorizontalAlignment="Left" Height="35" Margin="225,80,0,0" Grid.Row="1" VerticalAlignment="Top" Width="116" FontSize="16"/>
-        <Label Content="Код" HorizontalAlignment="Left" Height="36" Margin="225,120,0,0" Grid.Row="1" VerticalAlignment="Top" Width="116" FontSize="16"/>
-        <Image Source="Resources/Лого.jpg" HorizontalAlignment="Right" Grid.Row="0"></Image>
-        <Button Content="Button" HorizontalAlignment="Left" Height="33" Margin="513,123,0,0" Grid.Row="1" VerticalAlignment="Top" Width="40" Click="update">
-            <Button.Background>
-                <ImageBrush/>
-            </Button.Background>
+        <Button Content="Отмена" HorizontalAlignment="Left" Margin="200,350,0,0" VerticalAlignment="Top" Width="100" Height="35" BorderBrush="#FFFDFBFB" Click="Cancel_Click"/>
+        <Button Content="Вход" HorizontalAlignment="Left" Margin="400,350,0,0" VerticalAlignment="Top" Width="100" Height="35" BorderBrush="#FFF9F9F9"/>
+        <Label Content="Номер" HorizontalAlignment="Left" Margin="175,150,0,0" VerticalAlignment="Top" Height="26" Width="67"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="175,190,0,0" VerticalAlignment="Top" Height="26" Width="51"/>
+        <Label Content="Код" HorizontalAlignment="Left" Margin="175,230,0,0" VerticalAlignment="Top" Height="26" Width="51"/>
+        <Label Content="Телеком Нева Связь" HorizontalAlignment="Left" Margin="63,45,0,0" VerticalAlignment="Top" Height="40" Width="227" FontSize="22" RenderTransformOrigin="0.427,0.625"/>
+        <Button HorizontalAlignment="Left" Margin="360,230,0,0" VerticalAlignment="Top" Width="30" BorderBrush="#FFFFFDFD" Height="27" Background="White" Click="Update_Click_1">
+            <Image Source="/Resources/Авторизация.jpg" Height="26" Width="43" OpacityMask="#FF4D1919" />
         </Button>
-        <TextBlock HorizontalAlignment="Left" Height="23" Margin="346,49,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="185"/>
-        <TextBlock HorizontalAlignment="Left" Height="26" Margin="360,89,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="171"/>
-        <TextBlock HorizontalAlignment="Left" Height="28" Margin="358,128,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="138"/>
-
+        <Image Source="/Resources/Лого.jpg" Margin="492,0,-30,273" />
+        <TextBox Name="NumbeR" HorizontalAlignment="Left" Height="26" Margin="247,150,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="143" RenderTransformOrigin="0.2,0.522" KeyUp="NumbeR_KeyUp"/>
+        <TextBox Name="Password" HorizontalAlignment="Left" Height="26" Margin="247,190,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="143" KeyUp="Password_KeyUp"/>
+        <TextBox Name="Code" HorizontalAlignment="Left" Height="26" Margin="247,230,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="106" KeyUp="Code_KeyUp"/>
     </Grid>
 </Window>
